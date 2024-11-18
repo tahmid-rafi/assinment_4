@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+.nav-item{
+     @apply text-sec-text-color 
+     font-medium
+     dark:text-white 
+     hover:text-btn-color 
+     dark:hover:text-btn-color 
+     hover:underline 
+     transition-all 
+     duration-300;
+}
+
+.nav-item2{
+     @apply text-sec-text-color 
+     dark:text-white 
+     hover:text-btn-color 
+     dark:hover:text-btn-color 
+     hover:underline 
+     transition-all 
+     duration-300 
+     font-medium 
+     w-full py-5 
+     border-b block;
+}
+
+.btn-primary{
+     @apply bg-btn-color 
+     text-white 
+     py-1 md:py-2 
+     px-2 md:px-4 
+     rounded-md 
+     outline-none 
+     border-2 
+     border-btn-color 
+     hover:bg-btn-darker 
+     hover:border-btn-darker 
+     transition-all 
+     duration-300 
+     text-nowrap;
+}
+
+.btn-secondary{
+     @apply bg-white 
+     text-btn-color 
+     py-1 md:py-2 
+     px-4 
+     rounded-full 
+     outline-none 
+     border-2 
+     border-white 
+     hover:bg-btn-color 
+     hover:text-white 
+     hover:border-btn-color 
+     transition-all 
+     duration-300 
+     text-nowrap;
+}
+
+.btn-transparent{
+     @apply bg-transparent 
+     text-btn-color 
+     md:py-2
+     py-1 
+     px-4 
+     rounded-full 
+     outline-none 
+     border-2 
+     border-btn-color 
+     hover:bg-btn-color 
+     hover:text-white 
+     hover:border-btn-color 
+     transition-all 
+     duration-300 
+     text-nowrap;
+}
+
+.power-card{
+     @apply bg-card-bg 
+     rounded-md 
+     p-4 
+     text-white 
+     space-y-2
+     basis-1/4
+     cursor-pointer
+     hover:scale-105
+     transition-all duration-300;
+}
+
+.team-card{
+     @apply w-full
+     p-5
+     flex
+     md:flex-col
+     md:text-center
+     items-center
+     gap-3
+     rounded-md
+     shadow-xl
+     bg-white
+     dark:bg-sec-dark-bg
+     cursor-pointer
+     hover:scale-105
+     transition-all
+     duration-300;
+}
+}
+
+@layer utilities{
+.rounded-edge {
+     aspect-ratio: 3/2;
+     clip-path: ellipse(100% 100% at 50% 0);
+}
+}
